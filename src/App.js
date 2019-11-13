@@ -24,9 +24,9 @@ function App() {
   }
   return (
     <div className="App">
-      <header className="App-header">
         <h1>Team Builder</h1>
-      </header>
+        <TeamForm addNewTeamMember={addNewTeamMember}/>
+        <Team teams={teams}/>
     </div>
   );
 }
