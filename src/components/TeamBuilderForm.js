@@ -21,12 +21,12 @@ return (
         <label htmlFor='email'>Email</label>
         <input id='email' type='text' name='email' onChange={handleChanges} value={team.email}/>
         <label htmlFor='position'>Position</label>
-        <select id='position' name='position' onChange={handleChanges}>
-            <option value=''>--Please chose an option--</option>
+        <select id='position' name='position'  onChange={handleChanges}>
+            <option value='' hidden>--Please chose an option--</option>
             <option value='UX'>UX Designer</option>
-            <option value='frontEnd'>Front End Developer</option>
-            <option value='backEnd'>Back End Developer</option>
-            <option value='fullStack'>Full Stack Developer</option>
+            <option value='Front End Developer'>Front End Developer</option>
+            <option value='Back End Developer'>Back End Developer</option>
+            <option value='Full Stack Developer'>Full Stack Developer</option>
         </select>
         <button type='submit'>Add Team Member</button>
     </form>
